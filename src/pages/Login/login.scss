@@ -1,0 +1,14 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-wrapper {
+  width: 600px;
+  margin: 0 auto;
+}

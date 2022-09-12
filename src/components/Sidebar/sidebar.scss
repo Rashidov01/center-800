@@ -1,0 +1,55 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.sidebar-list {
+  @include list-unstyled;
+}
+
+.sidebat-list__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-list__link {
+  padding: 12px 15px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: #282b41;
+  font-size: 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all ease 0.4s;
+
+  &:hover,
+  &:hover > .sidebar-list__icon {
+    background-color: #f1f3ff;
+    color: #5f63f2;
+  }
+}
+
+.sidebar-list__icon {
+  margin-right: 16px;
+  font-size: 1.2em;
+  color: #adb5d1;
+  transition: all ease 0.4s;
+}
+
+.sidebar-list__text {
+  margin: 0;
+}
+
+.sidebar-list__link.active,
+.sidebar-list__link.active .sidebar-list__icon {
+  background-color: #f1f3ff;
+  color: #5f63f2;
+}
