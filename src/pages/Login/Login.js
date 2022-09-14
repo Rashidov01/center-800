@@ -1,37 +1,28 @@
 import React from "react";
-import { Button, Checkbox, Form, Input } from "antd";
 import "./login.scss";
 import FormHolder from "../../components/FormHolder/FormHolder";
+import { Head } from "../../components";
 
 const Login = () => {
-  const onFinish = (values) => {
-    console.log("Success:", values);
-  };
-
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-  };
   return (
     <div className="login">
       <div className="login-wrapper">
-        <Form
-          layout="vertical"
-          name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
-          initialValues={{
-            remember: true,
-          }}
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          autoComplete="off"
-        >
-          <FormHolder label="label" name="name" error="error" />
-        </Form>
+        <Head title="Login Page" />
+        <div className="login-wrapper__input">
+          <FormHolder label="Fullname" name="name" error="error" />
+        </div>
+        <div className="login-wrapper__input">
+          <FormHolder
+            label="password"
+            name="password"
+            error="ooo bitta bosayam narsa yoz !)))"
+          />
+        </div>
+        <div className="login-btn">
+          <button className="login-button" type="submit">
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   );

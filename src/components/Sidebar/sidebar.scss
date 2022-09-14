@@ -53,3 +53,23 @@
   background-color: #f1f3ff;
   color: #5f63f2;
 }
+
+.sidebar-bar.opened .sidebar-list__text {
+  display: none;
+}
+
+.sidebar-bar.opened .sidebar-list__link {
+  padding: 0;
+}
+
+.sidebar-bar.opened .sidebar-list__icon {
+  padding: 18px;
+  font-size: 24px;
+  border-radius: 12px;
+}
+
+.sidebar-bar.opened .sidebar-list__icon {
+  margin-right: 0;
+  min-width: 100%;
+  text-align: center;
+}

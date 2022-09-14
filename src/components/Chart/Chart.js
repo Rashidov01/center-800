@@ -2,15 +2,18 @@ import Chart from "react-apexcharts";
 import React from "react";
 
 function ApexChart() {
+  const data1 = [1, 2, 3, 4, 5, 6, 7];
+  const data2 = [11, 22, 33, 44, 55, 66, 77];
+  const data3 = [40, 80, 120, 160, 200, 240, 280];
   const state = {
     series: [
       {
         name: "plan",
-        data: [22, 55, 66],
+        data: data1,
       },
       {
         name: "done",
-        data: [88, 5, 66],
+        data: data2,
       },
     ],
     options: {
@@ -23,14 +26,33 @@ function ApexChart() {
       },
       stroke: {
         curve: "smooth",
+        width: 3,
       },
       xaxis: {
+        categories: data3,
         type: "datetime",
-        categories: [12, 3, 6],
+
+        labels: {
+          format: "dd/MM",
+        },
+      },
+      yaxis: {
+        labels: {
+          formatter: function (value) {
+            return value + "hour";
+          },
+        },
+      },
+      fill: {
+        gradient: {
+          enabled: true,
+          opacityFrom: 0.55,
+          opacityTo: 0,
+        },
       },
       tooltip: {
         x: {
-          format: "dd/MM/yy",
+          format: "DD/MM",
         },
       },
     },
@@ -39,7 +61,7 @@ function ApexChart() {
     <Chart
       options={state.options}
       series={state.series}
-      type="line"
+      type="area"
       height={240}
     />
   );

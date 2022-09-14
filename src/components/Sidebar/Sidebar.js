@@ -15,9 +15,15 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li className="sidebar-list__item">
-              <NavLink className="sidebar-list__link" to="/about">
+              <NavLink className="sidebar-list__link" to="/users">
                 <i className="sidebar-list__icon bx bxs-group"></i>
                 <span className="sidebar-list__text">Users</span>
+              </NavLink>
+            </li>
+            <li className="sidebar-list__item">
+              <NavLink className="sidebar-list__link" to="/documents">
+                <i class="sidebar-list__icon bx bxs-file-doc"></i>
+                <span className="sidebar-list__text">Documents</span>
               </NavLink>
             </li>
           </ul>

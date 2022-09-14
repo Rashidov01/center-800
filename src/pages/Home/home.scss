@@ -14,12 +14,24 @@
   width: 25%;
   min-height: 115px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   text-align: center;
   border-radius: 12px;
+}
+
+.home-info__icon {
+  font-size: 6em;
+  color: #5f63f2;
+}
+
+.home-info__holder {
+  width: 40%;
+
+  &:last-child {
+    width: 60%;
+  }
 }
 
 .home-info__num {
@@ -45,4 +57,14 @@
 
 .home-chart {
   margin-top: 30px;
+}
+
+.home-chart {
+  margin-top: 30px;
+}
+
+.home-chart__holder {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
 }

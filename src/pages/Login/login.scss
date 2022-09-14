@@ -6,9 +6,31 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  background-color: #f1f3ff;
 }
 
 .login-wrapper {
-  width: 600px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 45px;
+  width: 400px;
   margin: 0 auto;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.login-button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background-color: #5f63f2;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
 }

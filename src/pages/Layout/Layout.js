@@ -9,12 +9,14 @@ export default function Layout() {
       <header className="site-header">
         <Header />
       </header>
-      <div className="page-container">
+      <div className="page-container ">
         <div className="sidebar-bar">
+          {/* opened qoshiladigan classlar */}
           <Sidebar />
         </div>
         <main className="main-page">
-          <div className="container">
+          {/* opened qoshiladigan classlar */}
+          <div className="site-container ">
             <Outlet />
           </div>
         </main>

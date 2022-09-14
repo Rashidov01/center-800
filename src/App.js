@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { About, Home, Layout, Login } from "./pages";
+import { Home, Layout, Login, Users, Documents } from "./pages";
 import "./sass/main.scss";
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
         <Route path="login" element={<Login />} /> :
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="users" element={<Users />} />
+          <Route path="documents" element={<Documents />} />
         </Route>
       </Routes>
     </>

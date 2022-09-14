@@ -1,0 +1,58 @@
+.doc-table {
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.table-th {
+  color: #5f63f2;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.table-row {
+  font-size: 1.4em;
+  color: #adb5d1;
+  margin: auto 0;
+}
+
+.table-td {
+  font-size: 1.2em;
+  color: #282b41;
+}
+
+td,
+th {
+  padding: 25px !important;
+}
+
+table {
+  border: none;
+}
+
+.span {
+  padding: 5px 8px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.span--success {
+  background-color: #1dc997;
+}
+
+.span--danger {
+  background-color: #ff4d4f;
+}
+
+.span--warning {
+  background-color: #fa8b0b;
+}
+
+.table-action-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

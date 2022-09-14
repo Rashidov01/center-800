@@ -6,6 +6,12 @@
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+.header-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -46,4 +52,28 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.header-main__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-main__inp {
+  border: none;
+  font-size: 1.4em;
+  outline: none;
+  color: #282b41;
+
+  &::placeholder {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: #adb5d1;
+  }
+}
+
+.header-main__icon {
+  margin-right: 12px;
+  font-size: 1.8em;
+  color: #adb5d1;
 }

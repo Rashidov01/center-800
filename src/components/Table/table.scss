@@ -1,0 +1,45 @@
+.table {
+  margin: 0;
+}
+
+.action-btn {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.action-icon {
+  font-size: 1.2em;
+  color: #5f63f2;
+  transition: all ease 0.4s;
+}
+
+.ant-table,
+.ant-table-container,
+.ant-table-pagination > *,
+.ant-pagination-disabled,
+.ant-pagination-item-link,
+.ant-select-selector {
+  border-radius: 12px !important;
+}
+
+.ant-table-thead > tr > th {
+  text-transform: uppercase;
+  border-bottom: none !important;
+}
+
+.ant-table-cell::before {
+  display: none;
+}
+
+.ant-table-container table > thead > tr:first-child th:last-child {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+}
