@@ -2,24 +2,27 @@ import "./layout.scss";
 import React from "react";
 import { Header, Sidebar } from "../../components";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Layout() {
+  const addclass = useSelector((state) => state.class);
+
   return (
     <>
-      <header className="site-header">
-        <Header />
-      </header>
-      <div className="page-container ">
-        <div className="sidebar-bar">
-          {/* opened qoshiladigan classlar */}
-          <Sidebar />
-        </div>
-        <main className="main-page">
-          {/* opened qoshiladigan classlar */}
-          <div className="site-container ">
-            <Outlet />
+      <div className={`site-content ${addclass.value}`}>
+        <header className="site-header">
+          <Header />
+        </header>
+        <div className="page-container">
+          <div className="sidebar-bar">
+            <Sidebar />
           </div>
-        </main>
+          <main className="main-page">
+            <div className="site-container">
+              <Outlet />
+            </div>
+          </main>
+        </div>
       </div>
     </>
   );

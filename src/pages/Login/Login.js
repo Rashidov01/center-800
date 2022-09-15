@@ -7,15 +7,21 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login-wrapper">
-        <Head title="Login Page" />
+        <h3 className="login__title">login page</h3>
         <div className="login-wrapper__input">
-          <FormHolder label="Fullname" name="name" error="error" />
+          <FormHolder
+            label="Fullname"
+            name="name"
+            error="error"
+            required="true"
+          />
         </div>
         <div className="login-wrapper__input">
           <FormHolder
             label="password"
             name="password"
             error="ooo bitta bosayam narsa yoz !)))"
+            required="true"
           />
         </div>
         <div className="login-btn">

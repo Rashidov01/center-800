@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Input } from "antd";
 import "./form-holder.scss";
 
-
 export default function FormHolder(props) {
+  const [inpType, setInpType] = useState(<Input />);
+  useEffect(() => {
+    switch (props.name) {
+      case "password":
+        setInpType(<Input.Password />);
+        break;
+      case "search":
+        setInpType(<Input.Search />);
+        break;
+      case "area":
+        setInpType(<Input.TextArea />);
+        break;
+      case "text":
+        setInpType(<Input />);
+        break;
+      default:
+        break;
+    }
+  }, []);
+
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -28,12 +47,12 @@ export default function FormHolder(props) {
           name={props.name}
           rules={[
             {
-              required: true,
+              required: props.bool,
               message: props.error,
             },
           ]}
         >
-          <Input />
+          {inpType}
         </Form.Item>
       </Form>
     </div>

@@ -9,6 +9,7 @@
 }
 
 .sidebar-bar {
+  transition: all ease 0.2s;
   margin-top: -10px;
   padding: 10px;
   width: 18%;
@@ -16,13 +17,14 @@
   border-radius: 12px;
 }
 
-.sidebar-bar.opened {
+.site-content.opened .sidebar-bar {
   width: 5%;
   min-width: 5%;
 }
 
-.main-page.opened {
+.site-content.opened .main-page {
   min-width: 95%;
+  width: 95%;
 }
 
 .site-header {
@@ -32,6 +34,7 @@
 }
 
 .main-page {
+  transition: all ease 0.2s;
   padding-top: 25px;
   padding-bottom: 80px;
   background-color: #f1f3ff;

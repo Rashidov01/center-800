@@ -3,3 +3,75 @@
   background-color: #fff;
   border-radius: 15px;
 }
+
+.users-head {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users-head__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.users-head__btn {
+  border: none;
+  padding: 6px 15px;
+  background-color: #5f63f2;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+
+.user-head__title {
+  margin: 0;
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #282b41;
+  text-transform: capitalize;
+  margin-right: 30px;
+}
+
+// .users-head__form {
+//   padding: 12px 10px;
+//   background-color: #fff;
+//   border-radius: 12px;
+// }
+
+.users-head__inp,
+.users-head__button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.4em;
+  color: #282b41;
+}
+
+.users-head__text {
+  margin: 0;
+  margin-right: 30px;
+  font-size: 1.4em;
+  color: #adb5d1;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    width: 1px;
+    height: 20px;
+    background-color: #adb5d1;
+    content: "";
+    margin-right: 20px;
+  }
+}
+
+.users-head__text > span {
+  margin-right: 6px;
+}

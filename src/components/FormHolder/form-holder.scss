@@ -1,8 +1,18 @@
-.ant-input {
+.ant-input,
+.ant-input-affix-wrapper {
   border-radius: 12px !important;
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  border-radius: 0 !important;
 }
 
 .ant-form-item-required {
   color: #5f63f2 !important;
   text-transform: capitalize;
+}
+
+.ant-input-search-button,
+.ant-input-group-addon:last-child {
+  border-radius: 12px !important;
 }
