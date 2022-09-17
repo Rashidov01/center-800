@@ -1,0 +1,48 @@
+.ant-btn-add {
+  background: #5f63f2 !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+.modal-body-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-container__wrapper {
+  width: calc(50% - 10px);
+}
+
+.ant-modal-content,
+.ant-btn {
+  border-radius: 12px !important;
+}
+
+.ant-modal-header {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.modal-container-item {
+  margin-bottom: 10px;
+}
+
+.ant-modal-title {
+  text-transform: uppercase;
+}
+
+.ant-form-item-label {
+  text-transform: capitalize;
+}
+
+.ant-select {
+  width: 100% !important;
+}
+
+.modal-container-label {
+  max-width: 100%;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  text-transform: capitalize;
+}

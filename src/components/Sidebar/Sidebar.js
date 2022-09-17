@@ -26,6 +26,24 @@ const Sidebar = () => {
                 <span className="sidebar-list__text">Documents</span>
               </NavLink>
             </li>
+            <li className="sidebar-list__item">
+              <NavLink className="sidebar-list__link" to="/archive">
+                <i class="sidebar-list__icon bx bxs-file-archive"></i>
+                <span className="sidebar-list__text">Archive</span>
+              </NavLink>
+            </li>
+            <li className="sidebar-list__item">
+              <NavLink className="sidebar-list__link" to="/info">
+                <i class="sidebar-list__icon bx bx-info-circle"></i>
+                <span className="sidebar-list__text">Info</span>
+              </NavLink>
+            </li>
+            <li className="sidebar-list__item">
+              <NavLink className="sidebar-list__link" to="/command">
+                <i class="sidebar-list__icon bx bx-command"></i>
+                <span className="sidebar-list__text">Command</span>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
