@@ -4,7 +4,7 @@ import { DocTable, Head } from "../../components";
 export default function Documents() {
   return (
     <>
-      <Head title="documents" btn="yana qo'shish +" />
+      <Head title="Hujjatlar" btn="Qo'shish" />
       <DocTable />
     </>
   );

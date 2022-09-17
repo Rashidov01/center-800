@@ -59,7 +59,7 @@ const App = ({ button, title, text }) => {
           </div>
           <div className="modal-container__wrapper">
             <div className="modal-container-item">
-              <h3 className="modal-container-label">label</h3>
+              <h3 className="modal-container-label">Boshqarma</h3>
               <SelectComp value="value" option="option" />
             </div>
             <div className="modal-container-item">

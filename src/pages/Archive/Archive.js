@@ -1,11 +1,12 @@
 import React from "react";
 import "./archive.scss";
-import { Head } from "../../components";
+import { DocTable, Head } from "../../components";
 
 const Archive = () => {
   return (
     <div>
-      <Head title="Archive" />
+      <Head title="Arviv Hujjatlar" />
+      <DocTable />
     </div>
   );
 };

@@ -11,37 +11,37 @@ const Sidebar = () => {
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/">
                 <i className="sidebar-list__icon bx bxs-dashboard"></i>
-                <span className="sidebar-list__text">Dashboard</span>
+                <span className="sidebar-list__text">Ish stoli</span>
               </NavLink>
             </li>
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/users">
                 <i className="sidebar-list__icon bx bxs-group"></i>
-                <span className="sidebar-list__text">Users</span>
+                <span className="sidebar-list__text">Foydalanuvchilar</span>
               </NavLink>
             </li>
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/documents">
-                <i class="sidebar-list__icon bx bxs-file-doc"></i>
-                <span className="sidebar-list__text">Documents</span>
+                <i className="sidebar-list__icon bx bxs-file-doc"></i>
+                <span className="sidebar-list__text">Hujjatlar</span>
               </NavLink>
             </li>
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/archive">
-                <i class="sidebar-list__icon bx bxs-file-archive"></i>
-                <span className="sidebar-list__text">Archive</span>
-              </NavLink>
-            </li>
-            <li className="sidebar-list__item">
-              <NavLink className="sidebar-list__link" to="/info">
-                <i class="sidebar-list__icon bx bx-info-circle"></i>
-                <span className="sidebar-list__text">Info</span>
+                <i className="sidebar-list__icon bx bxs-file-archive"></i>
+                <span className="sidebar-list__text">Arxiv Hujjatlar</span>
               </NavLink>
             </li>
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/command">
-                <i class="sidebar-list__icon bx bx-command"></i>
-                <span className="sidebar-list__text">Command</span>
+                <i className="sidebar-list__icon bx bx-command"></i>
+                <span className="sidebar-list__text">Buyruqlar</span>
+              </NavLink>
+            </li>
+            <li className="sidebar-list__item">
+              <NavLink className="sidebar-list__link" to="/info">
+                <i className="sidebar-list__icon bx bx-info-circle"></i>
+                <span className="sidebar-list__text">Ma'lumotnomalar</span>
               </NavLink>
             </li>
           </ul>

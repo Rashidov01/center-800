@@ -31,15 +31,15 @@ const columns = [
     key: "control",
   },
   {
-    title: "Action",
+    title: "Amallar",
     key: "action",
     render: (_) => (
       <Space size="middle">
         <button className="action-btn action-btn--del">
-          <i class="action-icon action-icon--edit bx bxs-edit"></i>
+          <i className="action-icon action-icon--edit bx bxs-edit"></i>
         </button>
         <button className="action-btn action-btn--edit">
-          <i class="action-icon action-icon--del bx bxs-trash-alt"></i>
+          <i className="action-icon action-icon--del bx bxs-trash-alt"></i>
         </button>
         <button className="action-btn action-btn--del">
           <img
@@ -83,7 +83,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
-    key: "3",
+    key: "4",
     fullname: "Jim Green",
     age: 42,
     task: "Frontend Developer",
@@ -92,7 +92,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
-    key: "3",
+    key: "5",
     fullname: "Jim Green",
     age: 42,
     task: "Frontend Developer",
@@ -101,7 +101,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
-    key: "3",
+    key: "6",
     fullname: "Jim Green",
     age: 42,
     task: "Frontend Developer",
@@ -110,7 +110,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
-    key: "3",
+    key: "7",
     fullname: "Jim Green",
     age: 42,
     task: "Frontend Developer",
@@ -119,7 +119,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
-    key: "3",
+    key: "8",
     fullname: "Jim Green",
     age: 42,
     task: "Frontend Developer",

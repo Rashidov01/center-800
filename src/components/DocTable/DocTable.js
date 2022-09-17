@@ -8,18 +8,18 @@ const DocTable = () => {
     <>
       <div className="doc-table">
         <Table responsive>
-          <thead>
+          <thead className="align-middle">
             <tr>
               <th className="table-th">#</th>
               <th className="table-th">Hujjatlar raqami va sanasi</th>
-              <th className="table-th">Ro'yhatga olingan sana</th>
+              <th className="table-th">Ro'yxatga olingan sana</th>
               <th className="table-th">Hujjat kelgan idora</th>
               <th className="table-th">Hujjat turi</th>
               <th className="table-th">Hujjat kimda</th>
               <th className="table-th">Holati</th>
               <th className="table-th">Muddati</th>
               <th className="table-th">Ijro</th>
-              <th className="table-th">action</th>
+              <th className="table-th">Amallar</th>
             </tr>
           </thead>
           <tbody>
@@ -43,9 +43,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--success">
-                  nimadur
-                </span>
+                <span className="table-td-span span span--success">Yangi</span>
               </td>
               <td className="table-td">
                 Hujjatda ko'rsatilgan sanada ijrosi ta'minlansin
@@ -76,9 +74,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--warning">
-                  nimadur
-                </span>
+                <span className="table-td-span span span--warning">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">
@@ -107,7 +103,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--danger">nimadur</span>
+                <span className="table-td-span span span--danger">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">
@@ -136,9 +132,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--success">
-                  nimadur
-                </span>
+                <span className="table-td-span span span--success">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">
@@ -167,7 +161,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--danger">nimadur</span>
+                <span className="table-td-span span span--danger">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">
@@ -196,7 +190,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--danger">nimadur</span>
+                <span className="table-td-span span span--danger">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">
@@ -225,7 +219,7 @@ const DocTable = () => {
                 Ergashev
               </td>
               <td className="table-td">
-                <span className="table-td-span span span--danger">nimadur</span>
+                <span className="table-td-span span span--danger">Yangi</span>
               </td>
               <td className="table-td">Table cell</td>
               <td className="table-td">

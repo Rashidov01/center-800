@@ -8,11 +8,11 @@ function ApexChart() {
   const state = {
     series: [
       {
-        name: "plan",
+        name: "Reja",
         data: data1,
       },
       {
-        name: "done",
+        name: "Bajarildi",
         data: data2,
       },
     ],
@@ -39,7 +39,7 @@ function ApexChart() {
       yaxis: {
         labels: {
           formatter: function (value) {
-            return value + "hour";
+            return value;
           },
         },
       },
@@ -62,7 +62,7 @@ function ApexChart() {
       options={state.options}
       series={state.series}
       type="area"
-      height={240}
+      height={400}
     />
   );
 }

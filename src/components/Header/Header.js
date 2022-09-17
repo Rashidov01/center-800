@@ -27,7 +27,7 @@ export default function Header() {
           >
             <i className="header-entrance__icon bx bx-menu-alt-left"></i>
           </button>
-          <h1 className="header-entrance__logo">LOGO</h1>
+          <h1 className="header-entrance__logo">Hujjatlar</h1>
         </div>
         <div className="header-container">
           <ul className="header-main__list">
