@@ -42,7 +42,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li className="header-main__item">
-              <NavLink className="header-main__link" to="/">
+              <NavLink className="header-main__link" to="/login">
                 <i className="header-main__icon bx bx-log-out"></i>
               </NavLink>
             </li>
