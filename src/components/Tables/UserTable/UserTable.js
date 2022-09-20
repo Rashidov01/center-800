@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Space, Table, Tag } from "antd";
+import { Space, Table } from "antd";
 import React, { useState } from "react";
-import "./table.scss";
-import Eye from "../../assets/icons/eye.svg";
+import "./usertable.scss";
+import Eye from "../../../assets/icons/eye.svg";
 const columns = [
   {
     title: "FIO",

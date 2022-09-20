@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "../../components";
+import { UserTable } from "../../components";
 import FormHolder from "../../components/FormHolder/FormHolder";
 import Modal from "../../components/Modal/Modal";
 import "./users.scss";
@@ -23,7 +23,7 @@ export default function Users() {
         </div>
       </div>
       <div className="users-table">
-        <Table />
+        <UserTable />
       </div>
     </>
   );

@@ -1,8 +1,50 @@
 import React from "react";
 import "./sidebar.scss";
-import { NavLink } from "react-router-dom";
+import {
+  NumberOutlined,
+  ExclamationCircleOutlined,
+  ExceptionOutlined,
+} from "@ant-design/icons";
+import { Menu } from "antd";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+function getItem(label, key, icon, children, type) {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  };
+}
+
+const items = [
+  getItem("Hisobotlar", "sub1", <NumberOutlined />, [
+    getItem("Xodimlar bo'yicha", "1", <NumberOutlined />),
+    getItem("tashkilot bo'yicha", "2", <NumberOutlined />),
+  ]),
+];
+
+const items2 = [
+  getItem("Ma'lumotnomalar", "sub2", <ExclamationCircleOutlined />, [
+    getItem("tashkilotlar", "1", <ExceptionOutlined />),
+    getItem("bo'limlar", "2", <ExceptionOutlined />),
+    getItem("hujjat kelgan tashkilot", "2", <ExceptionOutlined />),
+    getItem("hujjat turlari", "2", <ExceptionOutlined />),
+  ]),
+];
 
 const Sidebar = () => {
+  const addclass = useSelector((state) => state.class);
+  const navigate = useNavigate();
+
+  const onClick = (e) => {
+    if (e.key === "1") {
+      navigate("/employee");
+    } else if (e.key === "2") {
+      navigate("/organization");
+    }
+  };
   return (
     <>
       <div className="sidebar">
@@ -41,8 +83,24 @@ const Sidebar = () => {
             <li className="sidebar-list__item">
               <NavLink className="sidebar-list__link" to="/info">
                 <i className="sidebar-list__icon bx bx-info-circle"></i>
-                <span className="sidebar-list__text">Ma'lumotnomalar</span>
+                <span className="sidebar-list__text">
+                  ijro Ma'lumotnomalari
+                </span>
               </NavLink>
+            </li>
+            <li className="sidebar-list__item">
+              <Menu
+                onClick={onClick}
+                mode={addclass.value === "opened" ? "vertical" : "inline"}
+                items={items}
+              />
+            </li>
+            <li className="sidebar-list__item">
+              <Menu
+                onClick={onClick}
+                mode={addclass.value === "opened" ? "vertical" : "inline"}
+                items={items2}
+              />
             </li>
           </ul>
         </div>

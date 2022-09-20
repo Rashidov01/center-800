@@ -1,10 +1,13 @@
 import React from "react";
-import { Head } from "../../components";
+import { ComTable, Head } from "../../components";
 
 const Command = () => {
   return (
     <div>
       <Head title="Buyruqlar" />
+      <div className="command-table">
+        <ComTable />
+      </div>
     </div>
   );
 };

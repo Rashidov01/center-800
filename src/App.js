@@ -8,6 +8,8 @@ import {
   Archive,
   Info,
   Command,
+  Employee,
+  Organization,
 } from "./pages";
 import "./sass/main.scss";
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="archive" element={<Archive />} />
           <Route path="info" element={<Info />} />
           <Route path="command" element={<Command />} />
+          <Route path="employee" element={<Employee />} />
+          <Route path="organization" element={<Organization />} />
         </Route>
       </Routes>
     </>

@@ -1,0 +1,83 @@
+@import "../../sass/mixins.scss";
+
+.employee-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+}
+
+.emp-box {
+  width: calc(25% - 15px);
+}
+
+.emp-box__head {
+  background-color: #adb5d1;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.emp-box__head-icon {
+  font-size: 8.4em;
+  color: #fff;
+}
+
+.emp-box__body {
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+}
+
+.emp-box__body-list {
+  @include list-unstyled;
+}
+
+.emp-box__body-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.emp-box__body-name {
+  margin: 0;
+  font-size: 1.5em;
+  color: #282b41;
+  width: 85%;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.emp-box__body-num {
+  padding: 2px 12px;
+  font-size: 1.4em;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.num--danger {
+  background-color: #ee6983;
+}
+
+.num--info {
+  background-color: #5cb8e4;
+}
+
+.num--secondary {
+  background-color: #b7c4cf;
+}
+
+.num--success {
+  background-color: #90b77d;
+}

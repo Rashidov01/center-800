@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-chart">
-          <Head title="hujjatlar" />
+          <Head title={"hujjatlar"} />
           <div className="home-chart__holder">
             <ApexChart />
           </div>

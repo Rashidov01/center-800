@@ -1,0 +1,22 @@
+.table-td-list {
+  display: flex;
+  align-items: center;
+}
+
+.table-td-link {
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.table-td-text {
+  width: 100%;
+}
+
+.table-td {
+  padding: 25px 15px !important;
+}

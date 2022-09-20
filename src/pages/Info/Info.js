@@ -1,11 +1,14 @@
 import React from "react";
-import { Head } from "../../components";
+import { Head, InfoTable } from "../../components";
 
 const Info = () => {
   return (
-    <div>
+    <>
       <Head title="Ijro to'g'ridagi ma'lumotlar" />
-    </div>
+      <div className="info-table">
+        <InfoTable />
+      </div>
+    </>
   );
 };
 
