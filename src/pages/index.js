@@ -9,6 +9,10 @@ import Command from "./Command/Command";
 import Info from "./Info/Info";
 import Organization from "./Organization/Organization";
 import Employee from "./Employee/Employee";
+import Department from "./Department/Department";
+import InDepartment from "./InDepartment/InDepartment";
+import InDocument from "./InDocument/InDocument";
+import InType from "./InType/InType";
 
 export {
   Login,
@@ -22,4 +26,8 @@ export {
   Info,
   Organization,
   Employee,
+  Department,
+  InDepartment,
+  InDocument,
+  InType,
 };

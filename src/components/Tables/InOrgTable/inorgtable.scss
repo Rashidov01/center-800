@@ -1,0 +1,20 @@
+.action-holder {
+  display: flex;
+  align-items: center;
+  justify-content: end !important;
+  width: 100%;
+  text-align: right !important;
+}
+
+.ant-space {
+  display: flex !important;
+  justify-content: end !important;
+  align-items: center !important;
+}
+
+.ant-tabel-cell {
+  text-align: right !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}

@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { InDocumentTable } from "./components";
 import {
   Home,
   Layout,
@@ -10,6 +11,9 @@ import {
   Command,
   Employee,
   Organization,
+  Department,
+  InDepartment,
+  InType,
 } from "./pages";
 import "./sass/main.scss";
 
@@ -27,6 +31,10 @@ function App() {
           <Route path="command" element={<Command />} />
           <Route path="employee" element={<Employee />} />
           <Route path="organization" element={<Organization />} />
+          <Route path="department" element={<Department />} />
+          <Route path="infodepartment" element={<InDepartment />} />
+          <Route path="infodocument" element={<InDocumentTable />} />
+          <Route path="infodoctype" element={<InType />} />
         </Route>
       </Routes>
     </>

@@ -8,6 +8,10 @@ import UserTable from "./Tables/UserTable/UserTable";
 import ComTable from "./Tables/ComTable/ComTable";
 import InfoTable from "./Tables/InfoTable/InfoTable";
 import OrgTable from "./Tables/OrgTable/OrgTable";
+import InOrgTable from "./Tables/InOrgTable/InOrgTable";
+import InDepartmentTable from "./Tables/InDepartmentTable/InDepartmentTable";
+import InDocumentTable from "./Tables/InDocumentTable/InDocumentTable";
+import InDocType from "./Tables/InDocType/InDocType";
 
 export {
   Header,
@@ -20,4 +24,8 @@ export {
   ComTable,
   InfoTable,
   OrgTable,
+  InOrgTable,
+  InDepartmentTable,
+  InDocumentTable,
+  InDocType,
 };

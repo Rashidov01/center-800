@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sidebar.scss";
 import {
   NumberOutlined,
@@ -6,8 +6,9 @@ import {
   ExceptionOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useRoutes } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -27,22 +28,50 @@ const items = [
 
 const items2 = [
   getItem("Ma'lumotnomalar", "sub2", <ExclamationCircleOutlined />, [
-    getItem("tashkilotlar", "1", <ExceptionOutlined />),
-    getItem("bo'limlar", "2", <ExceptionOutlined />),
-    getItem("hujjat kelgan tashkilot", "2", <ExceptionOutlined />),
-    getItem("hujjat turlari", "2", <ExceptionOutlined />),
+    getItem("tashkilotlar", "3", <ExceptionOutlined />),
+    getItem("bo'limlar", "4", <ExceptionOutlined />),
+    getItem("hujjat kelgan tashkilot", "5", <ExceptionOutlined />),
+    getItem("hujjat turlari", "6", <ExceptionOutlined />),
   ]),
 ];
 
 const Sidebar = () => {
+  const router = useLocation();
   const addclass = useSelector((state) => state.class);
   const navigate = useNavigate();
-
+  useEffect(() => {
+    const path = router.pathname;
+    if (
+      path === "/" ||
+      path === "/users" ||
+      path === "/documents" ||
+      path === "/archive" ||
+      path === "/command" ||
+      path === "/info"
+    ) {
+      setkeycurrent();
+    }
+  }, [router.pathname]);
+  const [keycurrent, setkeycurrent] = useState();
   const onClick = (e) => {
     if (e.key === "1") {
+      setkeycurrent("1");
       navigate("/employee");
     } else if (e.key === "2") {
+      setkeycurrent("2");
       navigate("/organization");
+    } else if (e.key === "3") {
+      setkeycurrent("3");
+      navigate("/department");
+    } else if (e.key === "4") {
+      setkeycurrent("4");
+      navigate("/infodepartment");
+    } else if (e.key === "5") {
+      setkeycurrent("5");
+      navigate("/infodocument");
+    } else if (e.key === "6") {
+      setkeycurrent("6");
+      navigate("/infodoctype");
     }
   };
   return (
@@ -90,6 +119,8 @@ const Sidebar = () => {
             </li>
             <li className="sidebar-list__item">
               <Menu
+                selectedKeys={keycurrent}
+                defaultOpenKeys={["sub1"]}
                 onClick={onClick}
                 mode={addclass.value === "opened" ? "vertical" : "inline"}
                 items={items}
@@ -97,6 +128,8 @@ const Sidebar = () => {
             </li>
             <li className="sidebar-list__item">
               <Menu
+                selectedKeys={keycurrent}
+                defaultOpenKeys={["sub2"]}
                 onClick={onClick}
                 mode={addclass.value === "opened" ? "vertical" : "inline"}
                 items={items2}

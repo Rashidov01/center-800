@@ -31,7 +31,6 @@ const columns = [
     key: "control",
   },
   {
-    title: "Amallar",
     key: "action",
     render: (_) => (
       <Space size="middle">
