@@ -70,8 +70,8 @@
   border-radius: 12px;
 }
 
-.site-content.opened .anticon svg {
-  font-size: 24px;
+.site-content.opened .ant-menu .anticon svg {
+  font-size: 22px !important;
 }
 
 .site-content.opened .sidebar-list__icon {
@@ -114,13 +114,13 @@
 }
 
 .ant-menu-submenu-title:hover .ant-menu-submenu-arrow,
-.ant-menu-submenu-title:hover .anticon svg {
+.ant-menu-submenu-title:hover .ant-menu .anticon svg {
   color: #5f63f2 !important;
 }
 
-.anticon svg {
+.ant-menu .anticon svg {
   color: #adb5d1 !important;
-  font-size: 18px;
+  font-size: 16px !important;
 }
 
 .ant-menu-inline {

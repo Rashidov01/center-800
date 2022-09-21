@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Space, Table } from "antd";
 import React, { useState } from "react";
+import { EyeOutlined } from "@ant-design/icons";
 import "./inorgtable.scss";
-import Eye from "../../../assets/icons/eye.svg";
 const columns = [
   {
     title: "Raqami",
@@ -19,21 +19,15 @@ const columns = [
     key: "action",
     render: (_) => (
       <Space size="middle">
-        <div className="action-holder">
-          <button className="action-btn action-btn--del">
-            <i className="action-icon action-icon--edit bx bxs-edit"></i>
+        <div className="action-wrapper">
+          <button className="action-btn action-btn--eye">
+            <EyeOutlined className="action-icon " />
           </button>
           <button className="action-btn action-btn--edit">
-            <i className="action-icon action-icon--del bx bxs-trash-alt"></i>
+            <i className="action-icon action-icon--edit bx bx-pencil"></i>
           </button>
           <button className="action-btn action-btn--del">
-            <img
-              className="action-icon--del"
-              src={Eye}
-              alt="eye icon"
-              width="20"
-              height="20"
-            />
+            <i className="action-icon action-icon--del bx bxs-trash-alt"></i>
           </button>
         </div>
       </Space>

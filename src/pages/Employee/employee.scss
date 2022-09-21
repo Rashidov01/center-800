@@ -13,18 +13,22 @@
 }
 
 .emp-box__head {
-  background-color: #adb5d1;
-  height: 200px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  transition: all ease 0.4s;
 }
 
-.emp-box__head-icon {
-  font-size: 8.4em;
-  color: #fff;
+.emp-box__head-img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .emp-box__body {
@@ -52,7 +56,7 @@
   margin: 0;
   font-size: 1.5em;
   color: #282b41;
-  width: 85%;
+  width: 80%;
 
   &::first-letter {
     text-transform: uppercase;
@@ -60,18 +64,27 @@
 }
 
 .emp-box__body-num {
-  padding: 2px 12px;
-  font-size: 1.4em;
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 1.2em;
   border-radius: 8px;
   color: #fff;
 }
 
+.emp-box__wrapper-title {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
 .num--danger {
-  background-color: #ee6983;
+  background-color: #ff3c2f;
 }
 
 .num--info {
-  background-color: #5cb8e4;
+  background-color: #a6b1e1;
 }
 
 .num--secondary {
@@ -79,5 +92,5 @@
 }
 
 .num--success {
-  background-color: #90b77d;
+  background-color: #62d2a2;
 }

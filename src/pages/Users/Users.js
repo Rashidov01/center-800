@@ -19,7 +19,7 @@ export default function Users() {
           </div>
         </div>
         <div className="users-head__wrapper">
-          <Modal title="Foydalanuvchi" text="text" button="Qo'shish" />
+          <Modal title="Foydalanuvchi" text="text" button="yangi qo'shish" />
         </div>
       </div>
       <div className="users-table">

@@ -39,6 +39,7 @@
 
 .header-entrance__logo {
   margin: 0;
+  font-weight: 700;
 }
 
 .header-main__list {
@@ -48,6 +49,7 @@
 }
 
 .header-main__item {
+  position: relative;
   margin-right: 20px;
 
   &:last-child {
@@ -77,4 +79,26 @@
   margin-right: 12px;
   font-size: 1.8em;
   color: #adb5d1;
+}
+
+.site-content.opened .header-entrance__icon {
+  font-size: 2.4em;
+}
+
+.site-content.opened .header {
+  padding-left: 35px;
+}
+
+.item-badge {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3c2f;
+  position: absolute;
+  top: -6px;
+  right: 2px;
+  border-radius: 50%;
+  color: #fff;
 }

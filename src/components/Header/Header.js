@@ -31,15 +31,17 @@ export default function Header() {
         </div>
         <div className="header-container">
           <ul className="header-main__list">
-            <li className="header-main__item">
+            <li className="header-main__item item-mes">
               <NavLink className="header-main__link" to="/">
                 <i className="header-main__icon bx bx-bell" />
               </NavLink>
+              <span className="item-badge">2</span>
             </li>
-            <li className="header-main__item">
+            <li className="header-main__item item-chat">
               <NavLink className="header-main__link" to="/">
                 <i className="header-main__icon bx bx-chat" />
               </NavLink>
+              <span className="item-badge">3</span>
             </li>
             <li className="header-main__item">
               <NavLink className="header-main__link" to="/login">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from "reactstrap";
 import "./orgtable.scss";
-import Eye from "../../../assets/icons/eye.svg";
+import { EyeOutlined } from "@ant-design/icons";
 
 const OrgTable = () => {
   return (
@@ -40,9 +40,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -64,9 +64,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -88,9 +88,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -112,9 +112,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -136,9 +136,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -160,9 +160,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -184,9 +184,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -208,9 +208,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>
@@ -232,57 +232,9 @@ const OrgTable = () => {
               <td className="table-td table-td-center">
                 <span className="emp-box__body-num num--danger">0</span>
               </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
-                </button>
-              </td>
-            </tr>
-            <tr className="table-tbody-tr">
-              <td className="table-td">01-01</td>
-              <td className="table-td">
-                O’zbekiston Respublikasi Prezidentining
-                farmon,farmoyish,qarorlari
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--secondary">31</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--info">20</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--success">12</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--danger">0</span>
-              </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
-                </button>
-              </td>
-            </tr>
-            <tr className="table-tbody-tr">
-              <td className="table-td">01-01</td>
-              <td className="table-td">
-                O’zbekiston Respublikasi Prezidentining
-                farmon,farmoyish,qarorlari
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--secondary">31</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--info">20</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--success">12</span>
-              </td>
-              <td className="table-td table-td-center">
-                <span className="emp-box__body-num num--danger">0</span>
-              </td>
-              <td className="table-td table-td-center">
-                <button className="table-action-btn" type="button">
-                  <img src={Eye} alt="eye icon" width="20" height="20" />
+              <td className="table-td table-td-center table-td-end">
+                <button className="action-btn action-btn--eye">
+                  <EyeOutlined className="action-icon " />
                 </button>
               </td>
             </tr>

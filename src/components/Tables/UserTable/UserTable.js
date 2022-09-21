@@ -2,8 +2,27 @@
 import { Space, Table } from "antd";
 import React, { useState } from "react";
 import "./usertable.scss";
-import Eye from "../../../assets/icons/eye.svg";
+import { EyeOutlined } from "@ant-design/icons";
 const columns = [
+  {
+    title: "Avatar",
+    dataIndex: "img",
+    key: "img",
+    render: (text, record) => (
+      <img
+        src={record.img}
+        alt="avatar imag"
+        width="40"
+        height="40"
+        style={{
+          borderRadius: "50%",
+          objectFit: "cover",
+          width: "50px",
+          height: "50px",
+        }}
+      />
+    ),
+  },
   {
     title: "FIO",
     dataIndex: "fullname",
@@ -34,27 +53,24 @@ const columns = [
     key: "action",
     render: (_) => (
       <Space size="middle">
-        <button className="action-btn action-btn--del">
-          <i className="action-icon action-icon--edit bx bxs-edit"></i>
-        </button>
-        <button className="action-btn action-btn--edit">
-          <i className="action-icon action-icon--del bx bxs-trash-alt"></i>
-        </button>
-        <button className="action-btn action-btn--del">
-          <img
-            className="action-icon--del"
-            src={Eye}
-            alt="eye icon"
-            width="20"
-            height="20"
-          />
-        </button>
+        <div className="action-wrapper">
+          <button className="action-btn action-btn--eye">
+            <EyeOutlined className="action-icon " />
+          </button>
+          <button className="action-btn action-btn--edit">
+            <i className="action-icon action-icon--edit bx bx-pencil"></i>
+          </button>
+          <button className="action-btn action-btn--del">
+            <i className="action-icon action-icon--del bx bxs-trash-alt"></i>
+          </button>
+        </div>
       </Space>
     ),
   },
 ];
 const data = [
   {
+    img: require("../../../assets/images/rb.jpeg"),
     key: "1",
     fullname: "John Brown",
     age: 32,
@@ -64,6 +80,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl1.jpeg"),
     key: "2",
     fullname: "Jim Green",
     age: 42,
@@ -73,6 +90,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl2.jpeg"),
     key: "3",
     fullname: "Jim Green",
     age: 42,
@@ -82,6 +100,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl3.jpeg"),
     key: "4",
     fullname: "Jim Green",
     age: 42,
@@ -91,6 +110,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl4.jpeg"),
     key: "5",
     fullname: "Jim Green",
     age: 42,
@@ -100,6 +120,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl5.jpeg"),
     key: "6",
     fullname: "Jim Green",
     age: 42,
@@ -109,6 +130,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/girl6.jpeg"),
     key: "7",
     fullname: "Jim Green",
     age: 42,
@@ -118,6 +140,7 @@ const data = [
     control: "markaziy boshqarma",
   },
   {
+    img: require("../../../assets/images/rb.jpeg"),
     key: "8",
     fullname: "Jim Green",
     age: 42,
@@ -144,7 +167,7 @@ const rowSelection = {
 };
 
 const App = () => {
-  const [selectionType, setSelectionType] = useState("checkbox");
+  const [selectionType] = useState("checkbox");
 
   return (
     <div className="table">

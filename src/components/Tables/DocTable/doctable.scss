@@ -56,3 +56,18 @@ table {
   background-color: transparent;
   cursor: pointer;
 }
+
+.table-td {
+  min-height: 90px !important;
+}
+
+.table-td-button {
+  text-align: center !important;
+}
+
+.action-button,
+.table-td-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

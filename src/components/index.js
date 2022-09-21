@@ -12,6 +12,7 @@ import InOrgTable from "./Tables/InOrgTable/InOrgTable";
 import InDepartmentTable from "./Tables/InDepartmentTable/InDepartmentTable";
 import InDocumentTable from "./Tables/InDocumentTable/InDocumentTable";
 import InDocType from "./Tables/InDocType/InDocType";
+import ArchiveTable from "./Tables/ArchiveTable/ArchiveTable";
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   InDepartmentTable,
   InDocumentTable,
   InDocType,
+  ArchiveTable,
 };

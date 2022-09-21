@@ -13,6 +13,7 @@ import Department from "./Department/Department";
 import InDepartment from "./InDepartment/InDepartment";
 import InDocument from "./InDocument/InDocument";
 import InType from "./InType/InType";
+import InDocumentFrom from "./InDocumentFrom/InDocumentFrom";
 
 export {
   Login,
@@ -29,5 +30,6 @@ export {
   Department,
   InDepartment,
   InDocument,
+  InDocumentFrom,
   InType,
 };

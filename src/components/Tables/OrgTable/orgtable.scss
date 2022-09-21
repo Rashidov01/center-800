@@ -2,3 +2,16 @@
 .table-th-center {
   text-align: center;
 }
+
+.table-btn {
+  width: 100% !important;
+  text-align: center;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.table-td-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
